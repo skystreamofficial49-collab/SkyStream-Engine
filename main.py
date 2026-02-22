@@ -2,12 +2,13 @@ import requests
 import json
 import time
 
-# BRIDGE_URL: Ye aapka wahi V31 wala link hai jo Chrome mein Success hua hai
-BRIDGE_URL = "https://script.google.com/macros/s/AKfycby0K-Gh1rx1L7wQhP-4GLSEsckSE2N9nyjEypV0cbj4BuRHmb1yrr01APVbn8v2BJIPVA/exec"
+# --- RAHUL BHAI KI MASTER CHABI (VERSION 32) ---
+# Ye wahi URL hai jo abhi 'Webhook Set Ho Gaya' bol chuka hai.
+BRIDGE_URL = "https://script.google.com/macros/s/AKfycbwUiOYzM6Mjp6rf2QJJ_WGhBGJkfDI7bAgMXDltQg6E9e7XOYyG8lqDuf4mTj36A6vr/exec"
 
-def run_engine():
-    # Hamara channels data
-    data = {
+def start_engine():
+    # Hamara channel data jo Firebase mein jayega
+    payload = {
         "pakistan": [
             {"name": "PTV Sports LIVE", "url": "https://raw.githubusercontent.com/Rahul-Bhai/links/main/ptv.m3u8"}
         ],
@@ -20,15 +21,15 @@ def run_engine():
     
     try:
         # Google Script ko data bhej rahe hain
-        response = requests.post(BRIDGE_URL, json=data, timeout=30)
+        response = requests.post(BRIDGE_URL, json=payload, timeout=30)
         
         if response.status_code == 200:
             print("✅ SUCCESS: Signal Delivered! Bot check karein.")
         else:
-            print(f"❌ Status Code: {response.status_code}")
+            print(f"❌ Error: Status Code {response.status_code}")
             
     except Exception as e:
-        print(f"❌ Error: {str(e)}")
+        print(f"❌ Connection Failed: {str(e)}")
 
 if __name__ == "__main__":
-    run_engine()
+    start_engine()
