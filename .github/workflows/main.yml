@@ -1,0 +1,24 @@
+name: SkyStream Engine Auto-Run
+
+on:
+  workflow_dispatch: # Manual run karne ke liye
+  schedule:
+    - cron: '0 * * * *' # Har ghante apne aap chalne ke liye
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run SkyStream Engine
+        run: python main.py
