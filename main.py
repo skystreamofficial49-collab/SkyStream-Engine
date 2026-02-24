@@ -2,9 +2,9 @@ import requests
 import json
 import time
 
-# --- RAHUL BHAI KI MASTER CHABI (VERSION 32) ---
-# Ye wahi URL hai jo abhi 'Webhook Set Ho Gaya' bol chuka hai.
-BRIDGE_URL = "https://script.google.com/macros/s/AKfycbwUiOYzM6Mjp6rf2QJJ_WGhBGJkfDI7bAgMXDltQg6E9e7XOYyG8lqDuf4mTj36A6vr/exec"
+# --- RAHUL BHAI KI MASTER CHABI (VERSION 33 - SUCCESS) ---
+# Ye wahi URL hai jisne abhi 'Success' bola hai
+BRIDGE_URL = "https://script.google.com/macros/s/AKfycbzqgrCyYysj8GK2ZpkI11qMamcQOHhwpFaEL90BlQ68GSl5TbDldLICSE4gJnjmjLLo/exec"
 
 def start_engine():
     # Hamara channel data jo Firebase mein jayega
