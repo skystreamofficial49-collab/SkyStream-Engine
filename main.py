@@ -1,36 +1,41 @@
 import requests
 import json
 
-# --- CONFIGURATION (Rahul Bhai ka Setup) ---
-# Ye wahi link hai jo aapne abhi Google Script se nikaala hai
-BRIDGE_URL = "https://script.google.com/macros/s/AKfycbyFiE8c1fXLKeO-RPpoxloDBEvEJG2MrYUmIeCj74z6rlh7ccQgeHmjT548v09_1T8trA/exec"
+# --- CONFIGURATION (Rahul Bhai ka naya setup) ---
+TOKEN = "8511752027:AAHLZTCkDCXDSltZm_hhNzPDQHgKU0FuBaw"
+CHAT_ID = "5545938511"
+# Aapka URL jo screenshot mein dikh raha hai:
+WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbyz0pHO4EmbgHVbjnQ1IcYLrgt32YBrd-_o-hat7SZCpKQtgNAGI-g9kkQlCVONMFMC0w/exec"
 
-def start_engine():
-    print("🚀 SkyStream Engine Shuru Ho Raha Hai...")
-    
-    # Fake Data for Testing (India aur Pakistan ke channels)
-    data = {
+def send_to_google_script(data):
+    try:
+        # Webhook ko activate karne ke liye pehle GET request
+        requests.get(f"{WEBHOOK_URL}?setWebhook=true")
+        
+        # Phir data bhejne ke liye POST request
+        response = requests.post(WEBHOOK_URL, json=data)
+        if response.status_code == 200:
+            print("✅ Signal Sent! 'Ting' check kijiye.")
+        else:
+            print(f"❌ Error Code: {response.status_code}")
+    except Exception as e:
+        print(f"⚠️ Error: {str(e)}")
+
+def main():
+    # Test Data: India aur Pakistan ke channels
+    channels = {
         "india": [
-            {"name": "Star Sports 1", "url": "http://example.com/ss1"},
-            {"name": "Sony Ten 3", "url": "http://example.com/st3"}
+            {"name": "Star Sports 1", "url": "https://example.com/ss1.m3u8"},
+            {"name": "Sony Ten 3", "url": "https://example.com/st3.m3u8"}
         ],
         "pakistan": [
-            {"name": "PTV Sports", "url": "http://example.com/ptv"},
-            {"name": "Ten Sports PK", "url": "http://example.com/tenpk"}
+            {"name": "PTV Sports", "url": "https://example.com/ptv.m3u8"},
+            {"name": "Ten Sports Pak", "url": "https://example.com/tensport.m3u8"}
         ]
     }
     
-    try:
-        print("📡 Signal Bhej Raha Hoon Google Script (Bridge) Ko...")
-        response = requests.post(BRIDGE_URL, json=data)
-        
-        if response.status_code == 200:
-            print("✅ Signal Pahunch Gaya! Bot Ting Karega.")
-        else:
-            print(f"❌ Error: Script ne jawab nahi diya. Code: {response.status_code}")
-            
-    except Exception as e:
-        print(f"⚠️ Connection Fail: {str(e)}")
+    print("🚀 SkyStream Engine Signal Bhej Raha Hai...")
+    send_to_google_script(channels)
 
 if __name__ == "__main__":
-    start_engine()
+    main()
