@@ -1,35 +1,36 @@
 import requests
 import json
-import time
 
-# --- RAHUL BHAI KI MASTER CHABI (VERSION 33 - SUCCESS) ---
-# Ye wahi URL hai jisne abhi 'Success' bola hai
-BRIDGE_URL = "https://script.google.com/macros/s/AKfycbzqgrCyYysj8GK2ZpkI11qMamcQOHhwpFaEL90BlQ68GSl5TbDldLICSE4gJnjmjLLo/exec"
+# --- CONFIGURATION (Rahul Bhai ka Setup) ---
+# Ye wahi link hai jo aapne abhi Google Script se nikaala hai
+BRIDGE_URL = "https://script.google.com/macros/s/AKfycbyFiE8c1fXLKeO-RPpoxloDBEvEJG2MrYUmIeCj74z6rlh7ccQgeHmjT548v09_1T8trA/exec"
 
 def start_engine():
-    # Hamara channel data jo Firebase mein jayega
-    payload = {
-        "pakistan": [
-            {"name": "PTV Sports LIVE", "url": "https://raw.githubusercontent.com/Rahul-Bhai/links/main/ptv.m3u8"}
-        ],
+    print("🚀 SkyStream Engine Shuru Ho Raha Hai...")
+    
+    # Fake Data for Testing (India aur Pakistan ke channels)
+    data = {
         "india": [
-            {"name": "Star Sports 1 Hindi", "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"}
+            {"name": "Star Sports 1", "url": "http://example.com/ss1"},
+            {"name": "Sony Ten 3", "url": "http://example.com/st3"}
+        ],
+        "pakistan": [
+            {"name": "PTV Sports", "url": "http://example.com/ptv"},
+            {"name": "Ten Sports PK", "url": "http://example.com/tenpk"}
         ]
     }
-
-    print(f"🚀 Signal bhej rahe hain: {time.strftime('%H:%M:%S')}")
     
     try:
-        # Google Script ko data bhej rahe hain
-        response = requests.post(BRIDGE_URL, json=payload, timeout=30)
+        print("📡 Signal Bhej Raha Hoon Google Script (Bridge) Ko...")
+        response = requests.post(BRIDGE_URL, json=data)
         
         if response.status_code == 200:
-            print("✅ SUCCESS: Signal Delivered! Bot check karein.")
+            print("✅ Signal Pahunch Gaya! Bot Ting Karega.")
         else:
-            print(f"❌ Error: Status Code {response.status_code}")
+            print(f"❌ Error: Script ne jawab nahi diya. Code: {response.status_code}")
             
     except Exception as e:
-        print(f"❌ Connection Failed: {str(e)}")
+        print(f"⚠️ Connection Fail: {str(e)}")
 
 if __name__ == "__main__":
     start_engine()
