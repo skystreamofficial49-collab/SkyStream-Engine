@@ -1,45 +1,43 @@
 import requests
 import os
 
-# Secrets
+# GitHub Secrets se raste uthana
 firebase_url = os.getenv('FIREBASE_DB_URL')
 script_url = os.getenv('SCRIPT_URL')
 
-# Global IPTV Sources (GitHub Repos)
-SOURCES = [
-    "https://iptv-org.github.io/iptv/index.m3u",
-    "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u"
-]
-
 def check_and_fix():
-    print("🚀 Rahul Bhai, World-Wide Scanning Shuru!")
+    print("🚀 Rahul Bhai, 1-Hour Checking Shuru ho gayi hai...")
     
-    # 1. Firebase se channels lena
-    resp = requests.get(f"{firebase_url}.json")
-    channels = resp.json()
-    
-    if not channels: return
+    try:
+        # 1. Firebase se data uthana
+        response = requests.get(f"{firebase_url}.json")
+        channels = response.json()
+        
+        if not channels:
+            print("❌ Firebase khali mila!")
+            return
 
-    for key, data in channels.items():
-        name = data.get('name', key)
-        url = data.get('url')
-        
-        # Link Check
-        try:
-            r = requests.get(url, timeout=5, stream=True)
-            if r.status_code == 200:
-                print(f"✅ {name} is Running")
-                continue
-        except:
-            pass
-            
-        # ❌ Agar link dead hai, toh yahan Hunter shuru hota hai
-        print(f"🔍 Searching backup for {name}...")
-        # Hum user ko message bhejte hain ki hum kaam par lag gaye hain
-        requests.post(script_url, json={"message": f"⚠️ Rahul Bhai, '{name}' dead mila. Main naya link dhoond raha hoon..."})
-        
-        # Yahan hum naya link dhoondne ka logic (Search) laga sakte hain
-        # Abhi ke liye hum report bhej rahe hain, next step mein isme 'Auto-Replace' add karenge.
+        # 2. Har link ko pehre par rakhna
+        for key, data in channels.items():
+            name = data.get('name', key)
+            url = data.get('url')
+
+            if url:
+                try:
+                    # Link check karna
+                    check = requests.get(url, timeout=7, stream=True)
+                    if check.status_code == 200:
+                        print(f"✅ {name}: Bilkul Mast Chal Raha Hai")
+                    else:
+                        # ⚠️ Dead link ki khabar dena (Hunter mode next update mein activate hoga)
+                        msg = f"❌ Rahul Bhai, '{name}' dead mila (Status: {check.status_code}). Jaldi naya link dhoond raha hoon!"
+                        requests.post(script_url, json={"message": msg})
+                except:
+                    msg = f"⚠️ Rahul Bhai, '{name}' connect nahi ho raha. Server down lag raha hai!"
+                    requests.post(script_url, json={"message": msg})
+
+    except Exception as e:
+        print(f"Error: {e}")
 
 if __name__ == "__main__":
     check_and_fix()
