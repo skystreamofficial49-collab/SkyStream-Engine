@@ -1,41 +1,45 @@
 import requests
-import json
+import os
 
-# --- CONFIGURATION (Rahul Bhai ka naya setup) ---
-TOKEN = "8511752027:AAHLZTCkDCXDSltZm_hhNzPDQHgKU0FuBaw"
-CHAT_ID = "5545938511"
-# Aapka URL jo screenshot mein dikh raha hai:
-WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbyz0pHO4EmbgHVbjnQ1IcYLrgt32YBrd-_o-hat7SZCpKQtgNAGI-g9kkQlCVONMFMC0w/exec"
+# GitHub Secrets se data uthana
+firebase_url = os.getenv('FIREBASE_DB_URL')
+script_url = os.getenv('SCRIPT_URL')
 
-def send_to_google_script(data):
-    try:
-        # Webhook ko activate karne ke liye pehle GET request
-        requests.get(f"{WEBHOOK_URL}?setWebhook=true")
-        
-        # Phir data bhejne ke liye POST request
-        response = requests.post(WEBHOOK_URL, json=data)
-        if response.status_code == 200:
-            print("✅ Signal Sent! 'Ting' check kijiye.")
-        else:
-            print(f"❌ Error Code: {response.status_code}")
-    except Exception as e:
-        print(f"⚠️ Error: {str(e)}")
-
-def main():
-    # Test Data: India aur Pakistan ke channels
-    channels = {
-        "india": [
-            {"name": "Star Sports 1", "url": "https://example.com/ss1.m3u8"},
-            {"name": "Sony Ten 3", "url": "https://example.com/st3.m3u8"}
-        ],
-        "pakistan": [
-            {"name": "PTV Sports", "url": "https://example.com/ptv.m3u8"},
-            {"name": "Ten Sports Pak", "url": "https://example.com/tensport.m3u8"}
-        ]
-    }
+def check_links():
+    print("🚀 Rahul Bhai, Checking shuru ho rahi hai...")
     
-    print("🚀 SkyStream Engine Signal Bhej Raha Hai...")
-    send_to_google_script(channels)
+    # 1. Firebase se channels ka data lena
+    try:
+        # Hum .json lagate hain taaki Firebase data de sake
+        response = requests.get(f"{firebase_url}.json")
+        channels = response.json()
+        
+        if not channels:
+            print("❌ Firebase khali mila!")
+            return
+
+        # 2. Har channel ko check karna
+        for key, data in channels.items():
+            # Agar data list mein hai ya direct dict mein
+            channel_name = data.get('name', key)
+            url = data.get('url')
+
+            if url:
+                try:
+                    # Link ko check karna (5 second ka time)
+                    check = requests.get(url, timeout=5, stream=True)
+                    if check.status_code == 200:
+                        print(f"✅ {channel_name}: OK")
+                    else:
+                        # Dead link ki khabar Google Script ko bhejna
+                        msg = f"❌ Rahul Bhai, '{channel_name}' dead ho gaya! (Status: {check.status_code})"
+                        requests.post(script_url, json={"message": msg})
+                except:
+                    msg = f"⚠️ Rahul Bhai, '{channel_name}' ka link connect nahi ho raha!"
+                    requests.post(script_url, json={"message": msg})
+
+    except Exception as e:
+        print(f"Error: {e}")
 
 if __name__ == "__main__":
-    main()
+    check_links()
