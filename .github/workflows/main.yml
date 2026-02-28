@@ -1,9 +1,9 @@
 name: SkyStream Engine Auto-Run
 
 on:
-  workflow_dispatch: # Manual run karne ke liye
   schedule:
-    - cron: '0 * * * *' # Har ghante apne aap chalne ke liye
+    - cron: '0 * * * *'  # Har 1 ghante mein khud chalega
+  workflow_dispatch:      # Manual "Run workflow" button rahega
 
 jobs:
   build:
@@ -15,10 +15,13 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.9'
+          python-version: '3.x'
 
       - name: Install dependencies
         run: pip install requests
 
-      - name: Run SkyStream Engine
+      - name: Run script
+        env:
+          FIREBASE_DB_URL: ${{ secrets.FIREBASE_DB_URL }}
+          SCRIPT_URL: ${{ secrets.SCRIPT_URL }}
         run: python main.py
