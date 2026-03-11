@@ -1,0 +1,20 @@
+[
+  {
+    "category": "Islamic",
+    "name": "Makkah Live HD",
+    "url": "https://win.holol.com/live/quran/playlist.m3u8",
+    "thumbnail": "https://img.youtube.com/vi/mI6I6Lskm98/hqdefault.jpg"
+  },
+  {
+    "category": "Islamic",
+    "name": "Madina Live HD",
+    "url": "https://win.holol.com/live/sunnah/playlist.m3u8",
+    "thumbnail": "https://img.youtube.com/vi/b6L-vG_G8f8/hqdefault.jpg"
+  },
+  {
+    "category": "International",
+    "name": "Al Jazeera English",
+    "url": "https://live-hls-web-aje.akamaized.net/m3u8/out/v1/7313b5efbefa4c33842369689408e063/index.m3u8",
+    "thumbnail": "https://www.aljazeera.com/wp-content/uploads/2020/04/aje_stack_logo_red_rgb.png"
+  }
+]
