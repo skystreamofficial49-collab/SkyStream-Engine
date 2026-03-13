@@ -1,21 +1,15 @@
 [
   {
-    "category": "India (News)",
-    "name": "Aaj Tak HD",
-    "url": "https://aajtak-live.akamaized.net/hls/live/2014238/aajtak/aajtakhd/playlist.m3u8",
-    "thumbnail": "https://i.ibb.co/Xz9tP8L/aajtak.png"
-  },
-  {
-    "category": "India (4K Movies)",
-    "name": "Star Gold 4K",
+    "category": "Muslim (Makkah & Madina)",
+    "name": "Makkah Live HD",
     "url": "https://win.holol.com/live/quran/playlist.m3u8",
     "thumbnail": "https://i.ibb.co/m0fH4xk/makkah-logo.png"
   },
   {
-    "category": "Pakistan (Dramas)",
-    "name": "HUM TV HD",
-    "url": "https://humtv.live/playlist.m3u8",
-    "thumbnail": "https://i.ibb.co/YyY4X8M/humtv.png"
+    "category": "Muslim (Makkah & Madina)",
+    "name": "Madina Live HD",
+    "url": "https://win.holol.com/live/sunnah/playlist.m3u8",
+    "thumbnail": "https://i.ibb.co/V9mH9xk/madina-logo.png"
   },
   {
     "category": "Muslim (Sunni)",
@@ -36,9 +30,45 @@
     "thumbnail": "https://i.ibb.co/rtV3mXy/peacetv.png"
   },
   {
+    "category": "India (News)",
+    "name": "Aaj Tak HD",
+    "url": "https://aajtak-live.akamaized.net/hls/live/2014238/aajtak/aajtakhd/playlist.m3u8",
+    "thumbnail": "https://i.ibb.co/Xz9tP8L/aajtak.png"
+  },
+  {
+    "category": "India (Entertainment)",
+    "name": "Star Plus HD",
+    "url": "https://win.holol.com/live/quran/playlist.m3u8",
+    "thumbnail": "https://i.ibb.co/YyY4X8M/starplus.png"
+  },
+  {
+    "category": "India (Movies)",
+    "name": "Star Gold 4K",
+    "url": "https://win.holol.com/live/quran/playlist.m3u8",
+    "thumbnail": "https://i.ibb.co/m0fH4xk/stargold.png"
+  },
+  {
+    "category": "Pakistan (News)",
+    "name": "ARY News HD",
+    "url": "https://arynews.ptv.com.pk/live/playlist.m3u8",
+    "thumbnail": "https://i.ibb.co/N6T4X8M/arynews.png"
+  },
+  {
+    "category": "Pakistan (Dramas)",
+    "name": "HUM TV HD",
+    "url": "https://humtv.live/playlist.m3u8",
+    "thumbnail": "https://i.ibb.co/YyY4X8M/humtv.png"
+  },
+  {
     "category": "Sports (Live)",
-    "name": "PTV Sports",
+    "name": "PTV Sports HD",
     "url": "https://ptvsports.ptv.com.pk/live/playlist.m3u8",
     "thumbnail": "https://i.ibb.co/T8X4XzL/ptvsports.png"
+  },
+  {
+    "category": "Discovery (4K)",
+    "name": "National Geographic",
+    "url": "https://natgeo-intl.live.com/stream/playlist.m3u8",
+    "thumbnail": "https://i.ibb.co/mRhP4XK/natgeo.png"
   }
 ]
