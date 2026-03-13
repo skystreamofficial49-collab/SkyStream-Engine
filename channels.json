@@ -1,80 +1,44 @@
 [
   {
-    "category": "Makkah & Madina",
-    "name": "Makkah Live HD",
-    "url": "https://win.holol.com/live/quran/playlist.m3u8",
-    "thumbnail": "https://i.ibb.co/m0fH4xk/makkah-logo.png"
-  },
-  {
-    "category": "Makkah & Madina",
-    "name": "Madina Live HD",
-    "url": "https://win.holol.com/live/sunnah/playlist.m3u8",
-    "thumbnail": "https://i.ibb.co/V9mH9xk/madina-logo.png"
-  },
-  {
-    "category": "Islamic (Sunni)",
-    "name": "Madani Channel",
-    "url": "https://madani.ptv.com.pk/live/playlist.m3u8",
-    "thumbnail": "https://i.ibb.co/K2N8XpL/madani.png"
-  },
-  {
-    "category": "Islamic (Shiya)",
-    "name": "Hadi TV 1",
-    "url": "https://haditv.live/hls/stream1.m3u8",
-    "thumbnail": "https://i.ibb.co/pZfX4S6/haditv.png"
-  },
-  {
-    "category": "Islamic (Ahle-Hadees)",
-    "name": "Peace TV Urdu",
-    "url": "https://peacetv.m3u8.stream/live.m3u8",
-    "thumbnail": "https://i.ibb.co/rtV3mXy/peacetv.png"
-  },
-  {
-    "category": "Pakistan News",
-    "name": "ARY News HD",
-    "url": "https://arynews.ptv.com.pk/live/playlist.m3u8",
-    "thumbnail": "https://i.ibb.co/N6T4X8M/arynews.png"
-  },
-  {
-    "category": "Pakistan News",
-    "name": "Geo News Live",
-    "url": "https://geonews.live/playlist.m3u8",
-    "thumbnail": "https://i.ibb.co/4pS6X9v/geonews.png"
-  },
-  {
-    "category": "Pakistan Dramas",
-    "name": "HUM TV HD",
-    "url": "https://humtv.live/playlist.m3u8",
-    "thumbnail": "https://i.ibb.co/YyY4X8M/humtv.png"
-  },
-  {
-    "category": "Pakistan Dramas",
-    "name": "Har Pal Geo",
-    "url": "https://harpalgeo.live/playlist.m3u8",
-    "thumbnail": "https://i.ibb.co/WvM8XvL/harpalgeo.png"
-  },
-  {
-    "category": "Sports World",
-    "name": "PTV Sports HD",
-    "url": "https://ptvsports.ptv.com.pk/live/playlist.m3u8",
-    "thumbnail": "https://i.ibb.co/T8X4XzL/ptvsports.png"
-  },
-  {
-    "category": "India 4K/HD",
+    "category": "India (News)",
     "name": "Aaj Tak HD",
     "url": "https://aajtak-live.akamaized.net/hls/live/2014238/aajtak/aajtakhd/playlist.m3u8",
     "thumbnail": "https://i.ibb.co/Xz9tP8L/aajtak.png"
   },
   {
-    "category": "Discovery 4K",
-    "name": "National Geographic HD",
-    "url": "https://natgeo-intl.live.com/stream/playlist.m3u8",
-    "thumbnail": "https://i.ibb.co/mRhP4XK/natgeo.png"
+    "category": "India (4K Movies)",
+    "name": "Star Gold 4K",
+    "url": "https://win.holol.com/live/quran/playlist.m3u8",
+    "thumbnail": "https://i.ibb.co/m0fH4xk/makkah-logo.png"
   },
   {
-    "category": "Hindu (Devotional)",
-    "name": "Aastha TV",
-    "url": "https://aastha.live.stream/playlist.m3u8",
-    "thumbnail": "https://i.ibb.co/LzfX4XL/aastha.png"
+    "category": "Pakistan (Dramas)",
+    "name": "HUM TV HD",
+    "url": "https://humtv.live/playlist.m3u8",
+    "thumbnail": "https://i.ibb.co/YyY4X8M/humtv.png"
+  },
+  {
+    "category": "Muslim (Sunni)",
+    "name": "Madani Channel",
+    "url": "https://madani.ptv.com.pk/live/playlist.m3u8",
+    "thumbnail": "https://i.ibb.co/K2N8XpL/madani.png"
+  },
+  {
+    "category": "Muslim (Shiya)",
+    "name": "Hadi TV 1",
+    "url": "https://haditv.live/hls/stream1.m3u8",
+    "thumbnail": "https://i.ibb.co/pZfX4S6/haditv.png"
+  },
+  {
+    "category": "Muslim (Ahle-Hadees)",
+    "name": "Peace TV Urdu",
+    "url": "https://peacetv.m3u8.stream/live.m3u8",
+    "thumbnail": "https://i.ibb.co/rtV3mXy/peacetv.png"
+  },
+  {
+    "category": "Sports (Live)",
+    "name": "PTV Sports",
+    "url": "https://ptvsports.ptv.com.pk/live/playlist.m3u8",
+    "thumbnail": "https://i.ibb.co/T8X4XzL/ptvsports.png"
   }
 ]
