@@ -24,22 +24,10 @@
     "thumbnail": "https://i.ibb.co/pZfX4S6/haditv.png"
   },
   {
-    "category": "Muslim (Ahle-Hadees)",
-    "name": "Peace TV Urdu",
-    "url": "https://peacetv.m3u8.stream/live.m3u8",
-    "thumbnail": "https://i.ibb.co/rtV3mXy/peacetv.png"
-  },
-  {
     "category": "India (News)",
     "name": "Aaj Tak HD",
     "url": "https://aajtak-live.akamaized.net/hls/live/2014238/aajtak/aajtakhd/playlist.m3u8",
     "thumbnail": "https://i.ibb.co/Xz9tP8L/aajtak.png"
-  },
-  {
-    "category": "India (Entertainment)",
-    "name": "Star Plus HD",
-    "url": "https://win.holol.com/live/quran/playlist.m3u8",
-    "thumbnail": "https://i.ibb.co/YyY4X8M/starplus.png"
   },
   {
     "category": "India (Movies)",
@@ -54,21 +42,9 @@
     "thumbnail": "https://i.ibb.co/N6T4X8M/arynews.png"
   },
   {
-    "category": "Pakistan (Dramas)",
-    "name": "HUM TV HD",
-    "url": "https://humtv.live/playlist.m3u8",
-    "thumbnail": "https://i.ibb.co/YyY4X8M/humtv.png"
-  },
-  {
     "category": "Sports (Live)",
     "name": "PTV Sports HD",
     "url": "https://ptvsports.ptv.com.pk/live/playlist.m3u8",
     "thumbnail": "https://i.ibb.co/T8X4XzL/ptvsports.png"
-  },
-  {
-    "category": "Discovery (4K)",
-    "name": "National Geographic",
-    "url": "https://natgeo-intl.live.com/stream/playlist.m3u8",
-    "thumbnail": "https://i.ibb.co/mRhP4XK/natgeo.png"
   }
 ]
