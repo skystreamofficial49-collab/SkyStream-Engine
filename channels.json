@@ -30,10 +30,11 @@
     "thumbnail": "https://i.ibb.co/Xz9tP8L/aajtak.png"
   },
   {
-    "category": "India (Movies)",
     "name": "Star Gold 4K",
-    "url": "https://bnd-ak-am-p.live.p6p.net/out/v1/9a4103135c914e9c9c8225e34743e498/index.m3u8",
-    "thumbnail": "https://i.ibb.co/m0fH4xk/stargold.png"
+    "url": "https://raw.githubusercontent.com/skystreamofficial49-collab/SkyStream-Engine/main/star_gold_fixed.m3u8",
+    "thumbnail": "https://example.com/star_gold_logo.png",
+    "category": "India (Movies)"
+  }
   },
   {
     "category": "Pakistan (News)",
