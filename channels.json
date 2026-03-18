@@ -32,7 +32,7 @@
   {
     "category": "India (Movies)",
     "name": "Star Gold 4K",
-    "url": "https://win.holol.com/live/quran/playlist.m3u8",
+    "url": "https://bnd-ak-am-p.live.p6p.net/out/v1/9a4103135c914e9c9c8225e34743e498/index.m3u8",
     "thumbnail": "https://i.ibb.co/m0fH4xk/stargold.png"
   },
   {
@@ -46,5 +46,17 @@
     "name": "PTV Sports HD",
     "url": "https://ptvsports.ptv.com.pk/live/playlist.m3u8",
     "thumbnail": "https://i.ibb.co/T8X4XzL/ptvsports.png"
+  },
+  {
+    "category": "Worldwide (English News)",
+    "name": "BBC News",
+    "url": "https://vs-hls-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8",
+    "thumbnail": "https://i.ibb.co/5G7X4zL/bbcnews.png"
+  },
+  {
+    "category": "Worldwide (Entertainment)",
+    "name": "Fashion TV",
+    "url": "https://fash1043.cloudycdn.net/f1043/index.m3u8",
+    "thumbnail": "https://i.ibb.co/MgsP9xk/ftv.png"
   }
 ]
