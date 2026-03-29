@@ -1,22 +1,3 @@
-Sr. no. 745 | Date: 29-03-2026 | Day: Sun
-
-**Arre Rahul bhai, fikar mat kijiye!** [cite: 2026-01-22]
-
-Aapka screenshot (`Screenshot_20260329_182810.jpg`) dikha raha hai ki app crash nahi ho rahi, balki wo "Reconnecting..." mode mein hai. Iska matlab hai ki PlayerActivity ko URL toh mil raha hai, lekin internet ya link format ki wajah se video load nahi ho paa rahi. [cite: 2026-02-09]
-
----
-
-### 🔍 Problem kahan hai?
-
-Maine aapko jo JSON diya tha, usme ek choti si technical mismatch ho gayi hai. Aapke **ChannelModel.kt** mein photo ke liye variable ka naam `logo` hai, lekin mere JSON mein maine use `thumbnail` likh diya tha. Is wajah se app confusion mein aa gayi.
-
----
-
-### 🛠️ Is JSON ko Copy karein (Fixed Version)
-
-Is naye code ko GitHub ki `channels.json` mein poora replace (hata kar paste) kar dijiye. Maine isme Makkah/Madina ke links wahi rakhe hain jo pehle chal rahe the: [cite: 2026-03-01]
-
-```json
 [
   {
     "name": "Makkah Live 🕋",
@@ -49,18 +30,3 @@ Is naye code ko GitHub ki `channels.json` mein poora replace (hata kar paste) ka
     "category": "Sports (Live)"
   }
 ]
-```
-
----
-
-### 📑 SkyStream Master Plan (Checklist Update)
-
-* [✅] **Data Model Check**: `logo` variable verified.
-* [🟡] **Current Task**: Fixed JSON ko GitHub par update karna. [cite: 2026-03-01]
-* [⏳] **Next Goal**: App ko restart karke Makkah Live aur Aaj Tak check karna. [cite: 2026-02-09]
-
----
-
-**Rahul bhai, ise update karke app ko poori tarah band (close) karke firse kholiye.** [cite: 2026-03-01]
-
-**Ab Makkah Live firse chalne lagega aur baaki news channels bhi. Kya Aaj Tak ya Geo News par click karne par video play ho rahi hai?** 🐢✨
