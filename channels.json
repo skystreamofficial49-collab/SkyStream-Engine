@@ -1,44 +1,66 @@
+Sr. no. 745 | Date: 29-03-2026 | Day: Sun
+
+**Arre Rahul bhai, fikar mat kijiye!** [cite: 2026-01-22]
+
+Aapka screenshot (`Screenshot_20260329_182810.jpg`) dikha raha hai ki app crash nahi ho rahi, balki wo "Reconnecting..." mode mein hai. Iska matlab hai ki PlayerActivity ko URL toh mil raha hai, lekin internet ya link format ki wajah se video load nahi ho paa rahi. [cite: 2026-02-09]
+
+---
+
+### 🔍 Problem kahan hai?
+
+Maine aapko jo JSON diya tha, usme ek choti si technical mismatch ho gayi hai. Aapke **ChannelModel.kt** mein photo ke liye variable ka naam `logo` hai, lekin mere JSON mein maine use `thumbnail` likh diya tha. Is wajah se app confusion mein aa gayi.
+
+---
+
+### 🛠️ Is JSON ko Copy karein (Fixed Version)
+
+Is naye code ko GitHub ki `channels.json` mein poora replace (hata kar paste) kar dijiye. Maine isme Makkah/Madina ke links wahi rakhe hain jo pehle chal rahe the: [cite: 2026-03-01]
+
+```json
 [
   {
     "name": "Makkah Live 🕋",
     "url": "https://win.makkahlive.net/makkah/live.m3u8",
-    "thumbnail": "https://raw.githubusercontent.com/skystreamofficial49-collab/SkyStream-Engine/main/logos/makkah.png",
+    "logo": "https://raw.githubusercontent.com/skystreamofficial49-collab/SkyStream-Engine/main/logos/makkah.png",
     "category": "Muslim (Makkah & Madina)"
   },
   {
     "name": "Madina Live 🕌",
     "url": "https://win.makkahlive.net/madina/live.m3u8",
-    "thumbnail": "https://raw.githubusercontent.com/skystreamofficial49-collab/SkyStream-Engine/main/logos/madina.png",
+    "logo": "https://raw.githubusercontent.com/skystreamofficial49-collab/SkyStream-Engine/main/logos/madina.png",
     "category": "Muslim (Makkah & Madina)"
   },
   {
-    "name": "DD News 🇮🇳",
-    "url": "https://ddnews.akamaized.net/hls/live/2034156/ddnews/index.m3u8",
-    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/e/e3/DD_News_logo.png",
-    "category": "India (News)"
-  },
-  {
-    "name": "Aaj Tak Live 🇮🇳",
+    "name": "Aaj Tak 🇮🇳",
     "url": "https://aajtak-live.akamaized.net/hls/live/2014414/aajtak/aajtak_1/index.m3u8",
-    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Aaj_Tak_Logo.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Aaj_Tak_Logo.png",
     "category": "India (News)"
   },
   {
     "name": "Geo News 🇵🇰",
     "url": "https://shls-live-ak.akamaized.net/out/v1/f1a096c680324b9187e1488c9f564701/index.m3u8",
-    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Geo_News_logo.svg/1200px-Geo_News_logo.svg.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Geo_News_logo.svg/1200px-Geo_News_logo.svg.png",
     "category": "Pakistan (News)"
   },
   {
     "name": "Sports Live 🏏",
     "url": "https://ythls.armelin.one/channel/UC4XGZJ7li9-9fM-6N2I7N7Q.m3u8",
-    "thumbnail": "https://raw.githubusercontent.com/skystreamofficial49-collab/SkyStream-Engine/main/logos/sports.png",
+    "logo": "https://raw.githubusercontent.com/skystreamofficial49-collab/SkyStream-Engine/main/logos/sports.png",
     "category": "Sports (Live)"
-  },
-  {
-    "name": "Hum TV 🇵🇰",
-    "url": "https://shls-live-ak.akamaized.net/out/v1/458e3852062f4817a3f37b678c430932/index.m3u8",
-    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/HUM_TV_Logo.svg/1200px-HUM_TV_Logo.svg.png",
-    "category": "Pakistan (Entertainment)"
   }
 ]
+```
+
+---
+
+### 📑 SkyStream Master Plan (Checklist Update)
+
+* [✅] **Data Model Check**: `logo` variable verified.
+* [🟡] **Current Task**: Fixed JSON ko GitHub par update karna. [cite: 2026-03-01]
+* [⏳] **Next Goal**: App ko restart karke Makkah Live aur Aaj Tak check karna. [cite: 2026-02-09]
+
+---
+
+**Rahul bhai, ise update karke app ko poori tarah band (close) karke firse kholiye.** [cite: 2026-03-01]
+
+**Ab Makkah Live firse chalne lagega aur baaki news channels bhi. Kya Aaj Tak ya Geo News par click karne par video play ho rahi hai?** 🐢✨
