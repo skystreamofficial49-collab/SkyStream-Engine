@@ -1,62 +1,44 @@
 [
   {
-    "category": "Muslim (Makkah & Madina)",
-    "name": "Makkah Live HD",
-    "url": "https://win.holol.com/live/quran/playlist.m3u8",
-    "thumbnail": "https://i.ibb.co/m0fH4xk/makkah-logo.png"
+    "name": "Makkah Live 🕋",
+    "url": "https://win.makkahlive.net/makkah/live.m3u8",
+    "thumbnail": "https://raw.githubusercontent.com/skystreamofficial49-collab/SkyStream-Engine/main/logos/makkah.png",
+    "category": "Muslim (Makkah & Madina)"
   },
   {
-    "category": "Muslim (Makkah & Madina)",
-    "name": "Madina Live HD",
-    "url": "https://win.holol.com/live/sunnah/playlist.m3u8",
-    "thumbnail": "https://i.ibb.co/V9mH9xk/madina-logo.png"
+    "name": "Madina Live 🕌",
+    "url": "https://win.makkahlive.net/madina/live.m3u8",
+    "thumbnail": "https://raw.githubusercontent.com/skystreamofficial49-collab/SkyStream-Engine/main/logos/madina.png",
+    "category": "Muslim (Makkah & Madina)"
   },
   {
-    "category": "Muslim (Sunni)",
-    "name": "Madani Channel",
-    "url": "https://madani.ptv.com.pk/live/playlist.m3u8",
-    "thumbnail": "https://i.ibb.co/K2N8XpL/madani.png"
+    "name": "DD News 🇮🇳",
+    "url": "https://ddnews.akamaized.net/hls/live/2034156/ddnews/index.m3u8",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/e/e3/DD_News_logo.png",
+    "category": "India (News)"
   },
   {
-    "category": "Muslim (Shiya)",
-    "name": "Hadi TV 1",
-    "url": "https://haditv.live/hls/stream1.m3u8",
-    "thumbnail": "https://i.ibb.co/pZfX4S6/haditv.png"
+    "name": "Aaj Tak Live 🇮🇳",
+    "url": "https://aajtak-live.akamaized.net/hls/live/2014414/aajtak/aajtak_1/index.m3u8",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Aaj_Tak_Logo.png",
+    "category": "India (News)"
   },
   {
-    "category": "India (News)",
-    "name": "Aaj Tak HD",
-    "url": "https://aajtak-live.akamaized.net/hls/live/2014238/aajtak/aajtakhd/playlist.m3u8",
-    "thumbnail": "https://i.ibb.co/Xz9tP8L/aajtak.png"
+    "name": "Geo News 🇵🇰",
+    "url": "https://shls-live-ak.akamaized.net/out/v1/f1a096c680324b9187e1488c9f564701/index.m3u8",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Geo_News_logo.svg/1200px-Geo_News_logo.svg.png",
+    "category": "Pakistan (News)"
   },
   {
-    "category": "India (Movies)",
-    "name": "Star Gold 4K",
-    "url": "https://raw.githubusercontent.com/skystreamofficial49-collab/SkyStream-Engine/main/star_gold_fixed.m3u8",
-    "thumbnail": "https://example.com/star_gold_logo.png"
+    "name": "Sports Live 🏏",
+    "url": "https://ythls.armelin.one/channel/UC4XGZJ7li9-9fM-6N2I7N7Q.m3u8",
+    "thumbnail": "https://raw.githubusercontent.com/skystreamofficial49-collab/SkyStream-Engine/main/logos/sports.png",
+    "category": "Sports (Live)"
   },
   {
-    "category": "Pakistan (News)",
-    "name": "ARY News HD",
-    "url": "https://arynews.ptv.com.pk/live/playlist.m3u8",
-    "thumbnail": "https://i.ibb.co/N6T4X8M/arynews.png"
-  },
-  {
-    "category": "Sports (Live)",
-    "name": "PTV Sports HD",
-    "url": "https://ptvsports.ptv.com.pk/live/playlist.m3u8",
-    "thumbnail": "https://i.ibb.co/T8X4XzL/ptvsports.png"
-  },
-  {
-    "category": "Worldwide (English News)",
-    "name": "BBC News",
-    "url": "https://vs-hls-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8",
-    "thumbnail": "https://i.ibb.co/5G7X4zL/bbcnews.png"
-  },
-  {
-    "category": "Worldwide (Entertainment)",
-    "name": "Fashion TV",
-    "url": "https://fash1043.cloudycdn.net/f1043/index.m3u8",
-    "thumbnail": "https://i.ibb.co/MgsP9xk/ftv.png"
+    "name": "Hum TV 🇵🇰",
+    "url": "https://shls-live-ak.akamaized.net/out/v1/458e3852062f4817a3f37b678c430932/index.m3u8",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/HUM_TV_Logo.svg/1200px-HUM_TV_Logo.svg.png",
+    "category": "Pakistan (Entertainment)"
   }
 ]
