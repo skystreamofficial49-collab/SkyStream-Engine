@@ -16,17 +16,5 @@
     "url": "https://aajtak-live.akamaized.net/hls/live/2014414/aajtak/aajtak_1/index.m3u8",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Aaj_Tak_Logo.png",
     "category": "India (News)"
-  },
-  {
-    "name": "Geo News 🇵🇰",
-    "url": "https://shls-live-ak.akamaized.net/out/v1/f1a096c680324b9187e1488c9f564701/index.m3u8",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Geo_News_logo.svg/1200px-Geo_News_logo.svg.png",
-    "category": "Pakistan (News)"
-  },
-  {
-    "name": "Sports Live 🏏",
-    "url": "https://ythls.armelin.one/channel/UC4XGZJ7li9-9fM-6N2I7N7Q.m3u8",
-    "logo": "https://raw.githubusercontent.com/skystreamofficial49-collab/SkyStream-Engine/main/logos/sports.png",
-    "category": "Sports (Live)"
   }
 ]
