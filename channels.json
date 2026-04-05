@@ -1,19 +1,13 @@
 [
   {
-    "name": "Aaj Tak 🇮🇳",
-    "url": "https://pubads.g.doubleclick.net/ssai/event/8p_m66_8T96vM3_F_Z-v_w/master.m3u8",
-    "logo": "https://raw.githubusercontent.com/skystreamofficial49-collab/SkyStream-Engine/main/logos/skystream_logo.png",
-    "category": "India 🇮🇳"
-  },
-  {
     "name": "Makkah Live 🕋",
-    "url": "https://win.hollystar.top/makkah/index.m3u8",
+    "url": "https://mecca.shia-m.com/hls/stream.m3u8",
     "logo": "https://raw.githubusercontent.com/skystreamofficial49-collab/SkyStream-Engine/main/logos/makkah.png",
     "category": "Muslim ☪️"
   },
   {
     "name": "Madina Live 🕌",
-    "url": "https://win.hollystar.top/madina/index.m3u8",
+    "url": "https://madinah.shia-m.com/hls/stream.m3u8",
     "logo": "https://raw.githubusercontent.com/skystreamofficial49-collab/SkyStream-Engine/main/logos/madina.png",
     "category": "Muslim ☪️"
   }
