@@ -1,14 +1,14 @@
 [
   {
-    "name": "Makkah Live 🕋 (Global)",
-    "url": "https://win.hollystar.top/hls/mecca.m3u8",
+    "name": "Makkah Live (Server 2)",
+    "url": "https://ythls.armelin.workers.dev/https://www.youtube.com/watch?v=S0TIDW-vA_M",
     "logo": "https://raw.githubusercontent.com/skystreamofficial49-collab/SkyStream-Engine/main/logos/makkah.png",
     "category": "Muslim ☪️"
   },
   {
-    "name": "Madina Live 🕌 (Global)",
-    "url": "https://win.hollystar.top/hls/madina.m3u8",
-    "logo": "https://raw.githubusercontent.com/skystreamofficial49-collab/SkyStream-Engine/main/logos/madina.png",
-    "category": "Muslim ☪️"
+    "name": "Test: News Channel",
+    "url": "https://linearjitp-vst.akamaized.net/v1/master/3722c23a5719103b30ad699e336d337d45766699/CC-AajTak-HD/master.m3u8",
+    "logo": "https://raw.githubusercontent.com/skystreamofficial49-collab/SkyStream-Engine/main/logos/skystream_logo.png",
+    "category": "Test 📺"
   }
 ]
